@@ -97,16 +97,16 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1087, 53);
+            this.panel4.Size = new System.Drawing.Size(1087, 71);
             this.panel4.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.dataGridView1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 53);
+            this.panel5.Location = new System.Drawing.Point(0, 71);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1087, 438);
+            this.panel5.Size = new System.Drawing.Size(1087, 420);
             this.panel5.TabIndex = 2;
             // 
             // panel6
@@ -124,7 +124,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1087, 438);
+            this.dataGridView1.Size = new System.Drawing.Size(1087, 420);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
@@ -143,7 +143,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(210, 53);
+            this.panel7.Size = new System.Drawing.Size(210, 71);
             this.panel7.TabIndex = 0;
             // 
             // panel8
@@ -153,7 +153,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(210, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(210, 53);
+            this.panel8.Size = new System.Drawing.Size(210, 71);
             this.panel8.TabIndex = 1;
             // 
             // button1
@@ -170,7 +170,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Location = new System.Drawing.Point(12, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 0;
@@ -183,13 +183,13 @@
             this.panel9.Location = new System.Drawing.Point(420, 0);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(5);
-            this.panel9.Size = new System.Drawing.Size(667, 53);
+            this.panel9.Size = new System.Drawing.Size(667, 71);
             this.panel9.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 20);
+            this.label2.Location = new System.Drawing.Point(15, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(16, 13);
             this.label2.TabIndex = 2;
@@ -200,7 +200,7 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Left;
             this.button2.Location = new System.Drawing.Point(5, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 43);
+            this.button2.Size = new System.Drawing.Size(90, 61);
             this.button2.TabIndex = 0;
             this.button2.Text = "Start";
             this.button2.UseVisualStyleBackColor = true;
@@ -208,7 +208,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 17);
+            this.textBox1.Location = new System.Drawing.Point(45, 26);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(140, 20);
             this.textBox1.TabIndex = 1;
@@ -217,7 +217,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(37, 17);
+            this.textBox2.Location = new System.Drawing.Point(37, 26);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(140, 20);
             this.textBox2.TabIndex = 3;

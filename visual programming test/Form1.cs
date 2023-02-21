@@ -32,15 +32,26 @@ namespace visual_programming_test
             return value <= left ? left : value >= right ? right : value;
         }
 
-        private static void showTableMaxValues(DataGridView dg, int n, int m)
+        private static void showTableMaxValues(DataGridView dg, DataGridView data)
         {
-            initDataGrid(dg);
-
-            var check_value = check(n, m);
-
+            dg.Visible = false;
             dg.DataSource = null;
-            dg.RowCount = check_value.Key;
-            dg.ColumnCount = check_value.Value;
+            dg.RowCount = data.RowCount;
+            dg.ColumnCount = 1;
+
+            for (int i=0, ie=data.RowCount; i<ie; ++i)
+            {
+                int max = int.Parse(data.Rows[i].Cells[0].Value.ToString());
+
+                for (int j=0, je=data.ColumnCount; j<je; ++j)
+                {
+                    int now = int.Parse(data.Rows[i].Cells[j].Value.ToString());
+                    if (now > max) max = now;
+                }
+                dg[0, i].Value = max;
+            }
+            
+            dg.Visible= true;
         }
 
         private static void initDataGrid(DataGridView dg, bool is_modified = false)
@@ -105,7 +116,7 @@ namespace visual_programming_test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            showTableMaxValues(dataGridView1, int.Parse(textBox1.Text), int.Parse(textBox2.Text));
+            showTableMaxValues(dataGridView2, dataGridView1);
         }
 
         private void Form1_Load(object sender, EventArgs e)
