@@ -49,7 +49,7 @@ namespace visual_programming_test
                 dg[0, i].Value = max;
             }
             
-            dg.Visible= true;
+            if(dg.RowCount > 0) dg.Visible= true;
         }
 
         private static void initDataGrid(DataGridView dg, bool is_modified = false)
@@ -141,6 +141,18 @@ namespace visual_programming_test
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Студент: Хакимов А.С.\r\nГруппа: ПБ-11", "О программе");
+        }
+
+        private void sizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            N_g = "0";
+            M_g = "0";
+            Form2 form2= new Form2();
+            form2.Owner = this;
+            form2.ShowDialog();
+            textBox1.Text = N_g;
+            textBox2.Text = M_g;
+            button2_Click(sender, e);
         }
     }
 }
