@@ -34,8 +34,6 @@ namespace visual_programming_test
 
         private static void showTableMaxValues(DataGridView dg, DataGridView data)
         {
-            dg.Visible = false;
-            dg.DataSource = null;
             dg.RowCount = data.RowCount;
             dg.ColumnCount = 1;
 
@@ -57,6 +55,7 @@ namespace visual_programming_test
         private static void initDataGrid(DataGridView dg, bool is_modified = false)
         {
             dg.Visible = false;
+            dg.DataSource = null;
             dg.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dg.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dg.Dock = DockStyle.Fill;
@@ -74,7 +73,7 @@ namespace visual_programming_test
         {
             var check_value = check(n, m);
 
-            dg.DataSource = null;
+            //dg.DataSource = null;
             dg.RowCount = check_value.Key;
             dg.ColumnCount = check_value.Value;
 
@@ -88,6 +87,7 @@ namespace visual_programming_test
                 }
             }
             if(n >0 && m>0) dg.Visible= true;
+
         }
 
         public Form1()
@@ -126,6 +126,21 @@ namespace visual_programming_test
 
             initDataGrid(dataGridView1);
             initDataGrid(dataGridView2);
+        }
+
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button2_Click(sender, e);
+        }
+
+        private void maxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            button1_Click(sender, e);
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Студент: Хакимов А.С.\r\nГруппа: ПБ-11", "О программе");
         }
     }
 }
